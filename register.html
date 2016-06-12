@@ -1,0 +1,84 @@
+<html>
+  <head>
+    <meta name="generator"
+    content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39" />
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="registerStyle.css" />
+    <title></title>
+	<script>
+	
+	
+	function Event(n, e) {
+				if (e == "true") {
+					document.getElementById(n.id).style.overflow = "visible";
+				} else {
+					document.getElementById(n.id).style.overflow = "hidden";
+				}
+			}
+	
+	
+	</script>
+  </head>
+  <body>
+  <div id="frame">
+    <div id="wrapper">
+	<div id="top_bar">
+				<img id="name" style="width:290px;height:200px;margin-left:5px;margin-top:15px;" src="banner_logo.png">
+
+
+				<ul id="apDiv1"  onmouseover="Event(this,'true');" onmouseout="Event(this,'');">
+					<li>
+						<a id="apDiv1_1" href="record_select.php">Record</a>
+					</li>					
+				</ul>
+				<ul id="apDiv2" onmouseover="Event(this,'true');" onmouseout="Event(this,'');">
+					<li>
+					<a id="apDiv2_1" href="retailer_select.php">Retailer</a>
+					
+				</ul>
+				<ul id="apDiv3" onmouseover="Event(this,'true');" onmouseout="Event(this,'');">					
+					<li>
+					<a id="apDiv3_1" href="singer_select.php">Singer</a>	
+					</li>
+
+				</ul>
+				<ul id="apDiv4" onmouseover="Event(this,'true');" onmouseout="Event(this,'');">
+					<li>
+					<a id="apDiv4_1" href="">Employee</a>						
+					</li>
+					<li>				
+					<a class="bar" href="h_employee_select.php">Hourly</a>				
+					</li>		
+					<li>				
+					<a class="bar" href="s_employee_select.php">Salaried</a>					
+					</li>
+				</ul>
+				<ul id="apDiv5">
+					<li>
+					<a id="apDiv5_1" href="home.php">Home</a>
+					</li>					
+				</ul>
+			</div>
+      <div id="main">
+        <form name="form" method="post" action="register_finish.php">
+          <div id="top">
+            <p id="title">會員資料</p>
+            <input type="text" name="id" id="id" placeholder="帳號" />
+            <br />
+            <input type="password" name="pw" id="pw" placeholder="密碼" />
+            <br />
+            <input type="password" name="pw2" id="pw2" placeholder="確認密碼" />
+            <br />
+            <input type="text" name="realname" id="realname" placeholder="姓名" />
+            <br />
+            <input type="text" name="job" id="job" placeholder="職稱" />
+            <br />
+            <input type="submit" name="button" value="註冊" id="btn_insert" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>

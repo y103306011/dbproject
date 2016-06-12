@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <meta name="generator"
+    content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39" />
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="retailer_insertStyle.css" />
+    <title></title>
+	<script>
+	
+	
+	function Event(n, e) {
+				if (e == "true") {
+					document.getElementById(n.id).style.overflow = "visible";
+				} else {
+					document.getElementById(n.id).style.overflow = "hidden";
+				}
+			}
+	
+	
+	</script>
+  </head>
+  <body>
+  <div id="frame">
+    <div id="wrapper">
+	<div id="top_bar">
+				<img id="name" style="width:290px;height:200px;margin-left:5px;margin-top:15px;" src="banner_logo.png">
+
+			<ul id="apDiv1"  onmouseover="Event(this,'true');" onmouseout="Event(this,'');">
+					<li>
+						<a id="apDiv1_1" href="retailer_update.html">Update</a>
+					</li>					
+				</ul>
+				<ul id="apDiv2" onmouseover="Event(this,'true');" onmouseout="Event(this,'');">
+					<li>
+					<a id="apDiv2_1" href="retailer_insert.html">Insert</a>
+					
+				</ul>
+				<ul id="apDiv3" onmouseover="Event(this,'true');" onmouseout="Event(this,'');">					
+					<li>
+					<a id="apDiv3_1" href="retailer_select.php">Select</a>	
+					</li>
+
+				</ul>
+				<ul id="apDiv4" onmouseover="Event(this,'true');" onmouseout="Event(this,'');">
+					<li>
+					<a id="apDiv4_1" href="">Retailer</a>						
+				</ul>
+				<ul id="apDiv5">
+					<li>
+					<a id="apDiv5_1" href="home.php">Home</a>
+					</li>					
+				</ul>
+			</div>
+      <div id="main">
+        <form name="form" method="post" action="retailer_insert_finish.php">
+          <div id="top">
+            <p id="title">經銷商資料新增</p>
+            <hr width="10%" id="HR1" size="3" color="black" align="center" />
+            <input type="text" name="id" id="id" placeholder="ID(*必填*)" />
+            <br />
+            <input type="text" name="name" id="name" placeholder="名稱" />
+            <br />
+            <input type="text" name="email" id="email" placeholder="email" />
+            <br />
+            <input type="text" name="phone" id="phone" placeholder="電話" />
+            <br />
+            <input type="text" name="location" id="location" placeholder="地址" />
+            <br />
+            <input type="text" name="damount" id="damount" placeholder="銷售量" />
+            <br />
+            <input type="submit" name="button" value="新增" id="btn_insert" />                           
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>

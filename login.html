@@ -1,0 +1,79 @@
+<html>
+	<head>
+		<script ></script>
+	
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<link rel="stylesheet" type="text/css" href="loginStyle.css">
+	<script>
+		function Event(n, e) {
+				if (e == "true") {
+					document.getElementById(n.id).style.overflow = "visible";
+				} else {
+					document.getElementById(n.id).style.overflow = "hidden";
+				}
+			}
+	</script>
+
+	
+</head>
+
+<body>
+<div id="frame"> 
+	<div id="wrapper">
+		<div id="top_bar">
+				<img id="name" style="width:290px;height:200px;margin-left:5px;margin-top:15px;" src="banner_logo.png">
+
+				<ul id="apDiv1"  onmouseover="Event(this,'true');" onmouseout="Event(this,'');">
+					<li>
+						<a id="apDiv1_1" href="record_select.php">Record</a>
+					</li>					
+				</ul>
+				<ul id="apDiv2" onmouseover="Event(this,'true');" onmouseout="Event(this,'');">
+					<li>
+					<a id="apDiv2_1" href="retailer_select.php">Retailer</a>
+					
+				</ul>
+				<ul id="apDiv3" onmouseover="Event(this,'true');" onmouseout="Event(this,'');">					
+					<li>
+					<a id="apDiv3_1" href="singer_select.php">Singer</a>	
+					</li>
+
+				</ul>
+				<ul id="apDiv4" onmouseover="Event(this,'true');" onmouseout="Event(this,'');">
+					<li>
+					<a id="apDiv4_1" href="">Employee</a>						
+					</li>
+					<li>				
+					<a class="bar" href="h_employee_select.php">Hourly</a>				
+					</li>		
+					<li>				
+					<a class="bar" href="s_employee_select.php">Salaried</a>					
+					</li>
+				</ul>
+				<ul id="apDiv5">
+					<li>
+					<a id="apDiv5_1" href="home.php">Home</a>
+					</li>					
+				</ul>
+			</div>
+
+		
+		<div id="main">
+			<p id="title"> 登入 </p>
+			<form name="form" method="post" action="connect.php">
+			<input type="text" name="id" id="ID" placeholder="帳號"/> <br>
+			<input type="password" name="pw" id="PW" placeholder="密碼"/> <br>
+			<input type="submit" name="button" value="Log in" id="logbtn"  />
+			<input type="button" onclick="location.href='register.html'" value="Sign up" id="btn_insert" >
+
+</form>
+</div>
+
+
+</div>
+
+</div>
+</body>
+
+</html>
